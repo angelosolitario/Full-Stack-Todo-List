@@ -1,0 +1,90 @@
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+#addDiv{
+    margin-bottom: 10px;
+}
+
+input{
+    color: #6382ab;
+    width: 75%;
+    padding: 0;    
+    height: 38px;
+}
+
+.btn.btn-primary{
+    margin: 0;
+}
+
+.container{
+    background-color: #b4bac2;
+    text-align: center;
+    box-shadow: 10px 5px 5px darkslategray;
+    padding: 0;
+    margin: 100px  auto;
+    width: 40%;
+}
+
+.list{
+    padding: 10px 0;
+    width: 100%;
+    margin: 0;
+}
+
+.thelist{
+    list-style: none;
+    padding: 0;
+    color: black;
+}
+
+.header{
+    background-color: rgb(42, 44, 87);
+    color:white;
+}
+.fa-plus{
+    float: right;
+    padding: 5px;
+}
+
+li{
+    cursor: pointer;
+    background-color: rgb(53, 69, 94);
+    transition: 0.2s linear;
+
+}
+li:nth-of-type(even){
+    background-color: gray;
+}
+
+.completed{
+    color: rgb(128, 128, 128);
+    text-decoration: line-through;
+}
+
+span{
+    width: 0;
+    margin-left: 50px;
+    float:right;
+    text-align: center;
+    color: white;
+    background-color: #e74c3c;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover span{
+    width:40px;
+    opacity: 1;
+    transition: 0.2s width linear;
+
+}
+button{
+    padding: 0;
+    border: none;
+    background: none;
+}
+#delete{
+    float: right;
+    width: 40px;
+}

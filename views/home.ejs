@@ -1,0 +1,26 @@
+<% include partials/header%>
+    <div class="container">
+        <div class="header">
+            <h1>To Do <i class="fas fa-plus"></i></h1>
+        </div>
+
+        <div class="list">
+            <div id="addDiv">
+                <form action="/" name="newTodo" method="POST">
+                    <input name="newTodo" id= "addtext" placeholder="Add to do..." class="addTo" type="text" />
+                    <button class="btn btn-primary" id="addbutton">Add</button>
+                </form>
+            </div>
+
+            <ul class="thelist">
+                <% todos.forEach(function(todo){ %>
+                        <li> <%= todo.title %>
+                        <form id="delete" action="/<%= todo._id%>?_method=DELETE" method="POST">
+                            <button id="delete"><span><i class='fas fa-trash'></i></span></button>
+                        </form>
+                        </li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+<% include partials/footer %>
